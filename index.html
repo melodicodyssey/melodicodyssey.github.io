@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head ng-app="MyApp">
+  <script src="main.js"></script>
   <link rel="stylesheet" href="assets/includes/bootstrap.min.css"></link>
   <link rel="stylesheet" href="assets/includes/bootstrap-theme.min.css"></link>
   <link rel="stylesheet" href="main.css"></link>
   <script src="assets/includes/jquery.min.js"></script>
   <script src="assets/includes/bootstrap.min.js"></script>
   <script src="assets/includes/jquery.min.js"></script>
-  <script src="main.js"></script>
 </head>
 <body ng-controller="MyCtrl">
 
@@ -24,9 +24,9 @@
         </div>
 <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#/">Home</a></li>
-            <li><a href="/about">About Me</a></li>
-            <li><a href="#/projects">Projects</a></li>
+            <li class="active" ng-click="go('/')"><a href="#">Home</a></li>
+            <li ng-click="go('/about')"><a href="#">About Me</a></li>
+            <li ng-click="go('/projects')"><a href="#">Projects</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact<b class="caret"></b></a>
               <ul class="dropdown-menu">
@@ -52,7 +52,7 @@
       </div>
     </div>
 
-
+    {{test}}
     <div ng-view></div>
 
 
