@@ -1,10 +1,60 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+<head ng-app="MyApp">
+  <link rel="stylesheet" href="assets/includes/bootstrap.min.css"></link>
+  <link rel="stylesheet" href="assets/includes/bootstrap-theme.min.css"></link>
+  <link rel="stylesheet" href="main.css"></link>
+  <script src="assets/includes/jquery.min.js"></script>
+  <script src="assets/includes/bootstrap.min.js"></script>
+  <script src="assets/includes/jquery.min.js"></script>
   <script src="main.js"></script>
 </head>
-<body>
-Hello World
+<body ng-controller="MyCtrl">
+
+   <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Stephen Bauer</a>
+        </div>
+<div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#/">Home</a></li>
+            <li><a href="/about">About Me</a></li>
+            <li><a href="#/projects">Projects</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="https://github.com/melodicodyssey"><img src="assets/images/github_icon.png"></img> Github</a></li>
+                <li class="divider"></li>
+                <li><a href="https://www.linkedin.com/pub/stephen-bauer/30/5b/749"><img src="assets/images/linkedin_icon.png"></img> LinkedIn</a></li>
+                <li class="divider"></li>                
+                <li><a href="mailto:stevedbauer@gmail.com"><img src="assets/images/gmail_icon.png"></img> stevedbauer@gmail.com</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+       <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Stephen Bauer</h1>
+        <h3>Web Developer</h3>
+        <p>Make the most of my education to contribute to your team!</p>
+        <!-- <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p> -->
+      </div>
+    </div>
+
+
+    <div ng-view></div>
+
+
 </body>
 </html>
