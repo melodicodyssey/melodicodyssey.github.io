@@ -1,9 +1,50 @@
-.navbar {
+body {
+  background-color: #EEEEEE;
+}
+
+.navbar .nav > li > a {
   color: white;
+}
+
+#links {
+  color: gold;
 }
 
 .jumbotron {
   background: url("http://www.alajwah.com/wp-content/uploads/2014/01/green-forest-high-definition-widescreen-wallpapers-definition-nature-photo-forest-hd-wallpaper.jpg");
   background-position: center;
-  color: #DDDDDD;
+  color: #FFFFFF;
+}
+
+.about {
+  padding-top: 50px;
+  width: 50%;
+}
+
+#me-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+  align: middle;
+}
+
+.projects {
+  width: 75%;
+  padding-top: 100px;
+  padding-bottom: 300px;
+  margin-bottom: 300px;
+}
+
+.project {
+  display: inline-block;
+  border: 2px solid black;
+  margin: 1px;
+  padding: 10px 15px 15px 10px;
+/*  width: 300px;
+  height: 300px;*/
+}
+
+.project-img {
+  height: 100px;
+  width: 170px;
 }

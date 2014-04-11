@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
-<head ng-app="MyApp">
-  <script src="main.js"></script>
-  <link rel="stylesheet" href="assets/includes/bootstrap.min.css"></link>
-  <link rel="stylesheet" href="assets/includes/bootstrap-theme.min.css"></link>
-  <link rel="stylesheet" href="main.css"></link>
+<head>
   <script src="assets/includes/jquery.min.js"></script>
   <script src="assets/includes/bootstrap.min.js"></script>
   <script src="assets/includes/jquery.min.js"></script>
+  <link rel="stylesheet" href="assets/includes/bootstrap.min.css"></link>
+  <link rel="stylesheet" href="assets/includes/bootstrap-theme.min.css"></link>
+  <link rel="stylesheet" href="main.css"></link>
 </head>
-<body ng-controller="MyCtrl">
-
+<body>
+<div>
+  <!-- NAVBAR -->
    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
@@ -20,20 +20,22 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Stephen Bauer</a>
+          <a class="navbar-brand" href="#"></a>
         </div>
-<div class="navbar-collapse collapse">
+   <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active" ng-click="go('/')"><a href="#">Home</a></li>
-            <li ng-click="go('/about')"><a href="#">About Me</a></li>
-            <li ng-click="go('/projects')"><a href="#">Projects</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact<b class="caret"></b></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span id="links">Links</span><b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><a href="https://github.com/melodicodyssey"><img src="assets/images/github_icon.png"></img> Github</a></li>
+                <li><a href="https://github.com/melodicodyssey" target="_blank"><img src="assets/images/github_icon.png"></img> Github</a></li>
                 <li class="divider"></li>
-                <li><a href="https://www.linkedin.com/pub/stephen-bauer/30/5b/749"><img src="assets/images/linkedin_icon.png"></img> LinkedIn</a></li>
-                <li class="divider"></li>                
+                <li><a href="https://www.linkedin.com/pub/stephen-bauer/30/5b/749" target="_blank"><img src="assets/images/linkedin_icon.png"></img> LinkedIn</a></li>
+                <li class="divider"></li> 
+                <li><a href="http://melodicodyssey84.wordpress.com/" target="_blank"><img src="assets/images/wordpress_logo.png"></img> My Blog</a></li>
+                <li class="divider"></li>               
                 <li><a href="mailto:stevedbauer@gmail.com"><img src="assets/images/gmail_icon.png"></img> stevedbauer@gmail.com</a></li>
               </ul>
             </li>
@@ -42,8 +44,8 @@
       </div>
     </div>
 
-       <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
+    <!-- JUMBOTRON -->
+    <div class="jumbotron jumbotron-fixed top" id="home">
       <div class="container">
         <h1>Stephen Bauer</h1>
         <h3>Web Developer</h3>
@@ -52,9 +54,72 @@
       </div>
     </div>
 
-    {{test}}
-    <div ng-view></div>
+    <!-- ABOUT ME -->
+    <div class="about container" id="about">
+    </br>
+    <center>
+      <h2>About Me</h2>
+      </br>
+      <img id="me-pic" src="https://avatars2.githubusercontent.com/u/5455830?s=460"></img>
+    </center>
+    </br>
+      <p>Hello there!
+      </p>
+      <p>My name is Stephen Bauer and I love to write code.  Those moments when a piece of beautiful code just works perfectly for the first time, are the moments with which I want to saturate my programming career.
+      </p>
+      <p>
+        I had always had a interest in programming/coding but for various absurd reasons never followed through with it.  After receiving a Bachelor's Degree in Accounting and being unhappy with the career path I felt not choice but to head down, I finally decided to perform a major course-correction after being let go from my last position in 2013.
+      </p>
+    </div>
+  </br></br></br></br></br></br>
 
-
+    <!-- PROJECTS -->
+    <div class="projects container" id="projects">
+      <center>
+      <h2>Projects</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="project">
+            <img class="project-img" src="http://i.imgur.com/AZobP27.png">
+            <h3>Acquaintly</h3>
+            <p>A CRM constructed by <a href="https://github.com/paninapress" target="_blank">Nina Pacifico</a> and myself as our final project for General Assembly's Web Development Immersive course.  Made using AngularJS, Ruby/Rubyon Rails, LinkedIn API, Omniauth, Devise.</p>
+            <p><a class="btn btn-default" href="http://acquaintly.herokuapp.com/" role="button" target="_blank">Go to app &raquo;</a></p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="project">
+            <img class="project-img" src="http://i.imgur.com/ZSYMeYt.png">
+            <h3>Audiophile</h3>
+            <p>An audio sharing application that is the culmination of efforts by <a href="https://github.com/kaifius" target="_blank">Kai Hofius</a>, <a href="https://github.com/pazzissima" target="_blank">Sofya Nagaslaeva</a>, <a href="https://github.com/JSchulhof" target="_blank">Jay Shculhof</a> and myself, as our group project for GA's WDI course. Made using Ruby/Ruby on Rails, JavaScript, Google Maps API, Sunspot, Devise.</p>
+            <p><a class="btn btn-default" href="http://audiofile.herokuapp.com/" role="button" target="_blank">Go to app &raquo;</a></p>
+          </div>
+       </div>
+        <div class="col-md-4">
+          <div class="project">
+            <img class="project-img" src="http://i.imgur.com/CnR1CPe.png">
+            <h3>Gnosis</h3>
+            <p>An RSS feed aggregator and note-recording application I made as my first project for GA's WDI course.  Made using Ruby/Ruby on Rails, Feedly API, Omniauth.</p>
+            <p><a class="btn btn-default" href="http://radiant-oasis-5288.herokuapp.com/start" role="button" target="_blank">Go to app &raquo;</a></p>
+          </div>
+        </div>
+      </center>
+      </div>
+</div>
+<script>
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 500);
+        return false;
+      }
+    }
+  });
+});
+</script>
 </body>
 </html>
