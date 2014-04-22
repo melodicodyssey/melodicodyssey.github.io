@@ -47,11 +47,12 @@
     <!-- JUMBOTRON -->
     <div class="jumbotron jumbotron-fixed top" id="home">
       <div class="container">
-        <h1>Stephen Bauer</h1>
+        <h1 class="name">Stephen Bauer</h1>
         <h3>Web Developer</h3>
         <!-- <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p> -->
       </div>
     </div>
+    <div id="jumbotron-border"></div>
 
     <!-- ABOUT ME -->
     <div class="about container" id="about">
@@ -64,44 +65,83 @@
     </br>
       <p>Hello there!
       </p>
-      <p>My name is Stephen Bauer and I love to write code.  Those moments when a piece of beautiful code just works perfectly for the first time, are the moments with which I want to saturate my programming career.
+      <p>My name is Stephen Bauer and I love to write code.  Those moments when a piece of beautiful code just works perfectly for the first time, are the moments with which I want to saturate my programming career with.
       </p>
       <p>
-        I had always had a interest in programming/coding but for various absurd reasons never followed through with it.  After receiving a Bachelor's Degree in Accounting and being unhappy with the career path I felt no choice but to head down, I finally decided to perform a major course-correction after being let go from my last position in 2013.
+        I have always had a interest in programming/coding but for various absurd reasons never followed through with it.  After receiving a Bachelor's Degree in Accounting and being unhappy with the career path I felt no choice but to head down, I finally decided to perform a major course-correction after being let go from my last position in 2013.  Using that event as a springboard to dive into the life I really wanted, I began to learn programming, beginning with Ruby, while applying to coding bootcamps.  After being accepted into General Assembly's Web Development Immersive course, and graudating from it, I now possess a solid foundation with which to learn new languages, frameworks, concepts, tools, whatever knowledge is available to be gained from the vast repository of this industry.
       </p>
     </div>
   </br></br></br></br></br></br>
 
     <!-- PROJECTS -->
-    <div class="projects container" id="projects">
+    <div class="projects container" id="projects" >
       <center>
       <h2>Projects</h2>
-      <div class="row">
+      </center>
+    </br>
+      <div class="row" style="text-align: left">
         <div class="col-md-4">
           <div class="project">
-            <img class="project-img" src="http://i.imgur.com/AZobP27.png">
-            <h3>Acquaintly</h3>
-            <p>A CRM constructed by <a href="https://github.com/paninapress" target="_blank">Nina Pacifico</a> and myself as our final project for General Assembly's Web Development Immersive course.  Made using AngularJS, Ruby/Rubyon Rails, LinkedIn API, Omniauth, Devise.</p>
-            <p><a class="btn btn-default" href="http://acquaintly.herokuapp.com/" role="button" target="_blank">Go to app &raquo;</a></p>
+            <center>
+            <img class="project-img" src="http://i.imgur.com/CnR1CPe.png">
+          </center>
+            <h3 style="text-align: center">Gnosis</h3>
+            <h5>Description</h5>
+            <p>An RSS feed aggregator and note-recording application I made as my first project for GA's WDI course.  
+            </p>
+            <p>
+              <h5>Intentions</h5>
+              For awhile now I thought it would be beneficial to have a portal from which to access a wealth of news/information sources to gain an at-a-glance overview of what is happening in the world every day, as well as to learn something new each day and log my information consumption.
+            </p>
+            <p>
+              <h5>Technologies</h5>
+              Made using Ruby on Rails, the Feedly API, and the Omniauth gem.</p>
+            <p><a class="btn btn-default" href="http://radiant-oasis-5288.herokuapp.com/start" role="button" target="_blank">Go to app &raquo;</a></p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="project">
-            <img class="project-img" src="http://i.imgur.com/ZSYMeYt.png">
-            <h3>Audiophile</h3>
-            <p>An audio sharing application that is the culmination of efforts by <a href="https://github.com/kaifius" target="_blank">Kai Hofius</a>, <a href="https://github.com/pazzissima" target="_blank">Sofya Nagaslaeva</a>, <a href="https://github.com/JSchulhof" target="_blank">Jay Shculhof</a> and myself, as our group project for GA's WDI course. Made using Ruby/Ruby on Rails, JavaScript, Google Maps API, Sunspot, Devise.</p>
+            <center>
+            <img class="project-img" src="http://i.imgur.com/ZSYMeYt.png" style="text-align: center">
+          </center>
+            <h3 style="text-align: center">Audiophile</h3>
+            <h5>Description</h5>
+            <p>An audio sharing application that is the culmination of efforts by <a href="https://github.com/kaifius" target="_blank">Kai Hofius</a>, <a href="https://github.com/pazzissima" target="_blank">Sofya Nagaslaeva</a>, <a href="https://github.com/JSchulhof" target="_blank">Jay Schulhof</a> and myself, as our group project for GA's WDI course.
+            </p>
+            <p>
+              With Audiophile, utilizing Amazon's S3 storage services, users are able to upload and share audio files of their choosing, browse others' accounts and add their files to their own, make as many snippets of as many files as they like.
+            </p>
+            <h5>Intentions</h5>
+            <p>
+              While discussing possible ideas for an app during our first meeting, our group touched upon the subject of audio files failing to go "viral" like their image and video counterparts do.  Wouldn't it be great, then, if we implemented a site truly conducive to audio file management and sharing?  A place where you can upload/record audio files of your own (or someone else's you really enjoy), take a snippet of that file if you like (for example, an excerpt from an hour-long podcast) and link that snippet to your friends without accompanying your link with instructions on what timeslot to buffer it?
+            </p>
+            <h5>Technologies</h5>
+            <p>
+              Made using Ruby/Ruby on Rails, JavaScript, Google Maps API, Sunspot, Devise, Amazon S3 and Paperclip.
+            </p>
             <p><a class="btn btn-default" href="http://audiofile.herokuapp.com/" role="button" target="_blank">Go to app &raquo;</a></p>
           </div>
        </div>
         <div class="col-md-4">
           <div class="project">
-            <img class="project-img" src="http://i.imgur.com/CnR1CPe.png">
-            <h3>Gnosis</h3>
-            <p>An RSS feed aggregator and note-recording application I made as my first project for GA's WDI course.  Made using Ruby/Ruby on Rails, Feedly API, Omniauth.</p>
-            <p><a class="btn btn-default" href="http://radiant-oasis-5288.herokuapp.com/start" role="button" target="_blank">Go to app &raquo;</a></p>
+            <center>
+            <img class="project-img" src="http://i.imgur.com/AZobP27.png">
+          </center>
+            <h3 style="text-align: center">Acquaintly</h3>
+            <h5>Description</h5>
+            <p>A CRM constructed by <a href="https://github.com/paninapress" target="_blank">Nina Pacifico</a> and myself as our final project for General Assembly's Web Development Immersive course.
+            </p>
+            <h5>Intentions</h5>
+            <p>
+              My partner and I discovered we share a common task with which we are uncommonly deficient: keeping up with our friends and contacts.  Joining in her inspiration to construct an application that would help us, and others, keep track of our communications to our different friends and hold us to maintain some measure of social health, we set about building Acquaintly, an application well on its way to embodying the initial vision and idea..
+            </p>
+            <h5>Technologies</h5>
+            <p>
+              Made using AngularJS, Ruby/Ruby on Rails, LinkedIn API, Omniauth, and Devise.
+            </p>
+            <p><a class="btn btn-default" href="http://acquaintly.herokuapp.com/" role="button" target="_blank">Go to app &raquo;</a></p>
           </div>
         </div>
-      </center>
       </div>
 </div>
 <script>
@@ -118,6 +158,10 @@ $(function() {
       }
     }
   });
+});
+$(function() {
+    // setup ul.tabs to work as tabs for each div directly under div.panes
+    $("ul.tabs").tabs("div.panes > div");
 });
 </script>
 </body>
