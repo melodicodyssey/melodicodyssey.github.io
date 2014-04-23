@@ -43,14 +43,14 @@ body {
 }
 
 .projects {
-  width: 75%;
+  width: 80%;
   padding-top: 100px;
   padding-bottom: 300px;
   margin-bottom: 300px;
 }
 
 .project {
-  background: rgb(254,254,254);
+  background: #EEEEEE;
   display: inline-block;
   border: 2px solid black;
   margin: 1px;
