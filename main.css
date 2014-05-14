@@ -1,6 +1,7 @@
 body {
   /*background-color: #EEEEEE;*/
   background: url("http://www.commentnation.com/hotlinks/off_white_marbled_paper_background_texture_seamless.jpg");
+  background-attachment: fixed;
 }
 
 .navbar .nav > li > a {
@@ -14,11 +15,12 @@ body {
 .jumbotron {
   background: url("assets/images/forest.jpg");
   background-position: center;
+  background-attachment: fixed;
   color: #FFFFFF;
   height: 800px;
 }
 
-#jumbotron-border {
+#div-border {
   height: 5px;
   margin-top: -30px;
   background: #111111;
@@ -33,6 +35,7 @@ body {
   width: 200px;
   height: 200px;
   border-radius: 200px;
+  border: 2px solid black;
   /*align: middle;*/
 }
 
@@ -45,6 +48,12 @@ h5 {
   font-style: italic;
   font-style: bold;
 }
+
+/*#projects_container {
+  background: url("assets/images/forest.jpg");
+  background-attachment: fixed;
+  background-position: center;
+}*/
 
 .projects {
   width: 80%;
