@@ -1,215 +1,213 @@
-body {
-  /*background-color: #EEEEEE;*/
-  background: url("http://www.commentnation.com/hotlinks/off_white_marbled_paper_background_texture_seamless.jpg");
-  background-attachment: fixed;
-}
 
-.navbar .nav > li > a {
-  color: #DDDDDD;
-}
-
-#links {
-  color: gold;
-}
-
-.jumbotron {
-  background: url("assets/images/forest.jpg");
-  background-position: center;
-  background-attachment: fixed;
-  color: #FFFFFF;
-  height: 800px;
-}
-
-#div-border {
-  height: 5px;
-  margin-top: -30px;
-  background: #111111;
-}
-
-.about {
-  padding-top: 30px;
-  width: 50%;
-}
-
-#me-pic {
-  width: 200px;
-  height: 200px;
-  border-radius: 200px;
-  border: 2px solid black;
-  /*align: middle;*/
-}
-
-#me-pic2 {
-  width: 200px;
-  height: 200px;
-}
-
-h5 {
-  font-style: italic;
-  font-style: bold;
-}
-
-/*#projects_container {
-  background: url("assets/images/forest.jpg");
-  background-attachment: fixed;
-  background-position: center;
-}*/
-
-.projects {
-  width: 80%;
-  padding-top: 50px;
-  padding-bottom: 300px;
-  margin-bottom: 300px;
-}
-
-.project {
-  background: #EEEEEE;
-  border: 2px solid black;
-  margin: 1px;
-  padding: 10px 15px 15px 10px;
-/*  width: 300px;
-  height: 300px;*/
-}
-
-.project h3 {
-  /*text-align: center;*/
-}
-
-.project img {
-  text-align: center;
-}
-
-.unclicked {
-  text-align: left;
-}
-
-.unclicked p {
-  display: none;
-}
-
-.unclicked h5 {
-  display: none;
-}
-
-/*.unclicked img {
-  display: none;
-}*/
-
-.project-img {
-  height: 100px;
-  width: 170px;
-  border: 1px solid black;
-}
-
-@media (max-width: 768px) {
-  h1 {
-    font-size: 50px;
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 16px;
   }
-}
+  .page-wrapper {
+    width: 62.5em;
+    padding: 0;
+    margin: 0 auto;
+    text-align: left;
+    background-color: #ffffff;
+  }
+  .name-banner {
+    width: 47.938em;
+    height: 12.500em;
+    margin-top: 1.250em;
+    float: right;
+    background: #ffffff url("assets/images/name-banner2.jpg") no-repeat 0%;
+  }
+  .navbar {
+    width: 20.8%;
+    height: 76.250em;
+    padding-right: 1.375em;
+    border-right: 0.188em solid #aaa9a9;
+  }
+  .main {
+    width: 76.7%;
+    height: 62.500em;
+    float: right;
+  }
+  #my-pic {
+    width: 200px;
+    height: 200px;
+    margin-top: 1.250em;
+    border-radius: 50%;
+    border: 2px solid #436D23;
+  }
+  h2 {
+    font-size: 1.375em;
+    color: #436D23;
+  }
+  a {
+    text-decoration: none;
+    color: rgb(98, 255, 70);
+  }
+  li {
+    -webkit-transition: color .5s ease;
+    -moz-transition: color .5s ease;
+    -o-transition: color .5s ease;
+    transition: color .5s ease;
+  }
+  li:hover {
+    color: #aaa9a9;
+  }
+  ul {
+    list-style: none;
+    padding-left: 1.250em;
+  }
+  .professional {
+    margin: 0;
+    padding-top: 2.813em;
+  }
+  .container {
+    margin-left: 1em;
+  }
+  .info-image {
+    position: relative;
+    width: 50em;
+    height: 43.750em;
+    background: #ffffff url("assets/images/forest.jpg") no-repeat center center;
+  }
+  .info-contact, .info-bio, .info-gnosis, .info-aquaintly, .info-helio, .info-share {
+    position: absolute;
+    width: 50em;
+    height: 43.750em;
+    display: none;
+  }
+  .screen {
+    position: absolute;
+    width: 50em;
+    height: 43.750em;
+    background-color: rgba(0,0,0,.4);
 
-
-
-
-
-
-
-
-/* root element for tabs  */
-ul.tabs {
-    list-style:none;
-    margin:0 !important;
-    padding:0;
-    border-bottom:1px solid #666;
-    height:30px;
-}
-
-/* single tab */
-ul.tabs li {
-    float:left;
-    text-indent:0;
-    padding:0;
-    margin:0 !important;
-    list-style-image:none !important;
-}
-
-/* link inside the tab. uses a background image */
-ul.tabs a {
-    background: url(/media/img/tabs/blue.png) no-repeat -420px 0;
-    font-size:11px;
-    display:block;
-    height: 30px;
-    line-height:30px;
-    width: 134px;
-    text-align:center;
-    text-decoration:none;
-    color:#333;
-    padding:0px;
-    margin:0px;
-    position:relative;
-    top:1px;
-}
-
-ul.tabs a:active {
-    outline:none;
-}
-
-/* when mouse enters the tab move the background image */
-ul.tabs a:hover {
-    background-position: -420px -31px;
-    color:#fff;
-}
-
-/* active tab uses a class name "current". its highlight is also done by moving the background image. */
-ul.tabs a.current, ul.tabs a.current:hover, ul.tabs li.current a {
-    background-position: -420px -62px;
-    cursor:default !important;
-    color:#000 !important;
-}
-
-/* Different widths for tabs: use a class name: w1, w2, w3 or w2 */
-
-
-/* width 1 */
-ul.tabs a.s { background-position: -553px 0; width:81px; }
-ul.tabs a.s:hover { background-position: -553px -31px; }
-ul.tabs a.s.current  { background-position: -553px -62px; }
-
-/* width 2 */
-ul.tabs a.l { background-position: -248px -0px; width:174px; }
-ul.tabs a.l:hover { background-position: -248px -31px; }
-ul.tabs a.l.current { background-position: -248px -62px; }
-
-
-/* width 3 */
-ul.tabs a.xl { background-position: 0 -0px; width:248px; }
-ul.tabs a.xl:hover { background-position: 0 -31px; }
-ul.tabs a.xl.current { background-position: 0 -62px; }
-
-
-/* initially all panes are hidden */
-.panes .pane {
-    display:none;
-}
-
-
-
-
-/* tab pane styling */
-.panes div {
-    display:none;
-    padding:15px 10px;
-    border:1px solid #999;
-    border-top:0;
-    height:100px;
-    font-size:14px;
-    background-color:#fff;
-}
-
-
-a:active {
-    outline:none;
-}
-
-:focus {
-    -moz-outline-style:none;
-}
+  }
+  .info-share img {
+    position: relative;
+    width: 100%;
+    z-index: 2;
+  }
+  .info-aquaintly img {
+    position: relative;
+    width: 100%;
+    z-index: 2;
+  }
+  .info-gnosis img {
+    position: relative;
+    width: 100%;
+    z-index: 2;
+  }
+ 
+  .contact-buttons-container {
+    margin-left: 0.938em;
+  }
+  .contact_btn {
+    padding-right: 0.625em;
+  }
+  .github_btn {
+    width: 2em;
+    height: 2em;
+    float: left;
+    background: url("assets/images/github_icon.png") no-repeat;
+  }
+  .github_btn:hover {
+    background: url("assets/images/github_icon_green.png") no-repeat;
+  }
+  .mail_btn {
+    width: 2em;
+    height: 2em;
+    float: left;
+    background: url("assets/images/email_icon.png") no-repeat;
+  }
+  .mail_btn:hover {
+    background: url("assets/images/email_icon_green.png") no-repeat;
+  }
+  .linkedin_btn {
+    width: 2em;
+    height: 2em;
+    float: left;
+    background: url("assets/images/linkedin_icon_black.png") no-repeat;
+  }
+  .linkedin_btn:hover {
+    background: url("assets/images/linkedin_icon_green.png") no-repeat;
+  }
+  .twitter_btn {
+    width: 2em;
+    height: 2em;
+    float: left;
+    background: url("assets/images/twitter_icon_black2.png") no-repeat;
+  }
+  .twitter_btn:hover {
+    background: url("assets/images/twitter_icon_green.ico") no-repeat;
+  }
+  .pointer {
+    cursor: pointer;
+  }
+  p {
+    position: relative;
+    color: #ffffff;
+    margin-left: 20px;
+  }
+  p.name {
+    font-size: 2em;
+    margin-bottom: -12px;
+    padding-top: 10px;
+  }
+  p.github {
+    background: url("assets/images/github_icon_black2.png") no-repeat;
+    padding: 0.625em 0 0 0;
+    margin-top: 3.125em
+  }
+  span.github-text {
+    padding-left: 2.5em;
+  }
+  p.email {
+    background: url("assets/images/email_icon.png") no-repeat;
+    padding: 0.625em 0 0 0;
+  }
+  span.email-text {
+    padding-left: 2.5em;
+  }
+  p.linkedin {
+    background: url("assets/images/linkedin_icon_black.png") no-repeat;
+    padding: 0.625em 0 0 0;
+  }
+  span.linkedin-text {
+    padding-left: 2.5em;
+  }
+  p.twitter {
+    background: url("assets/images/twitter_icon_black2.png") no-repeat;
+    padding: 0.625em 0 0 0;
+  }
+  span.twitter-text {
+    padding-left: 2.5em;
+  }
+  p.blog {
+    background: url("assets/images/wordpress_icon.png") no-repeat;
+    padding: 0.625em 0 0 0;
+  }
+  span.blog-text {
+    padding-left: 2.5em;
+  }
+  p.resume {
+    background: url("assets/images/pdf_icon_black.png") no-repeat;
+    padding: 0.625em 0 0 0;
+  }
+  span.resume-text {
+    padding-left: 2.5em;
+  }
+  footer {
+    width: 100%;
+    margin: 0;
+    padding: .8em 0 1em 0;
+    padding-left: 18em;
+    font-size: 0.750em;
+    font-style: italic;
+    background-color: black;
+    color: rgb(162, 204, 112);
+  }
+  .divider {
+    font-style: normal;
+  }
