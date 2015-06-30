@@ -1,18 +1,4 @@
-Skip to content
-This repository  
-Pull requests
-Issues
-Gist
- @melodicodyssey
- Unwatch 1
-  Star 0
-  Fork 1
-melodicodyssey/Steve-Portfolio---Redesigned
-forked from azureowl/Steve-Portfolio---Redesigned
- branch: master  Steve-Portfolio---Redesigned/StevePortfolio.css
-@azureowlazureowl an hour ago Edit copy, separated CSS and js in new files
-1 contributor
-RawBlameHistory     212 lines (210 sloc)  4.329 kB
+
 html, body {
     height: 100%;
     margin: 0;
@@ -31,7 +17,7 @@ html, body {
     height: 12.500em;
     margin-top: 1.250em;
     float: right;
-    background: #ffffff url("images/name-banner2.jpg") no-repeat 0%;
+    background: #ffffff url("assets/images/name-banner2.jpg") no-repeat 0%;
   }
   .navbar {
     width: 20.8%;
@@ -83,7 +69,7 @@ html, body {
     position: relative;
     width: 50em;
     height: 43.750em;
-    background: #ffffff url("images/forest.jpg") no-repeat center center;
+    background: #ffffff url("assets/images/forest.jpg") no-repeat center center;
   }
   .info-contact, .info-bio, .info-gnosis, .info-aquaintly, .info-helio, .info-share {
     position: absolute;
@@ -124,37 +110,37 @@ html, body {
     width: 2em;
     height: 2em;
     float: left;
-    background: url("images/github_icon.png") no-repeat;
+    background: url("assets/images/github_icon.png") no-repeat;
   }
   .github_btn:hover {
-    background: url("images/github_icon_green.png") no-repeat;
+    background: url("assets/images/github_icon_green.png") no-repeat;
   }
   .mail_btn {
     width: 2em;
     height: 2em;
     float: left;
-    background: url("images/email_icon.png") no-repeat;
+    background: url("assets/images/email_icon.png") no-repeat;
   }
   .mail_btn:hover {
-    background: url("images/email_icon_green.png") no-repeat;
+    background: url("assets/images/email_icon_green.png") no-repeat;
   }
   .linkedin_btn {
     width: 2em;
     height: 2em;
     float: left;
-    background: url("images/linkedin_icon_black.png") no-repeat;
+    background: url("assets/images/linkedin_icon_black.png") no-repeat;
   }
   .linkedin_btn:hover {
-    background: url("images/linkedin_icon_green.png") no-repeat;
+    background: url("assets/images/linkedin_icon_green.png") no-repeat;
   }
   .twitter_btn {
     width: 2em;
     height: 2em;
     float: left;
-    background: url("images/twitter_icon_black2.png") no-repeat;
+    background: url("assets/images/twitter_icon_black2.png") no-repeat;
   }
   .twitter_btn:hover {
-    background: url("images/twitter_icon_green.ico") no-repeat;
+    background: url("assets/images/twitter_icon_green.ico") no-repeat;
   }
   .pointer {
     cursor: pointer;
@@ -170,7 +156,7 @@ html, body {
     padding-top: 10px;
   }
   p.github {
-    background: url("images/github_icon_black2.png") no-repeat;
+    background: url("assets/images/github_icon_black2.png") no-repeat;
     padding: 0.625em 0 0 0;
     margin-top: 3.125em
   }
@@ -178,35 +164,35 @@ html, body {
     padding-left: 2.5em;
   }
   p.email {
-    background: url("images/email_icon.png") no-repeat;
+    background: url("assets/images/email_icon.png") no-repeat;
     padding: 0.625em 0 0 0;
   }
   span.email-text {
     padding-left: 2.5em;
   }
   p.linkedin {
-    background: url("images/linkedin_icon_black.png") no-repeat;
+    background: url("assets/images/linkedin_icon_black.png") no-repeat;
     padding: 0.625em 0 0 0;
   }
   span.linkedin-text {
     padding-left: 2.5em;
   }
   p.twitter {
-    background: url("images/twitter_icon_black2.png") no-repeat;
+    background: url("assets/images/twitter_icon_black2.png") no-repeat;
     padding: 0.625em 0 0 0;
   }
   span.twitter-text {
     padding-left: 2.5em;
   }
   p.blog {
-    background: url("images/wordpress_icon.png") no-repeat;
+    background: url("assets/images/wordpress_icon.png") no-repeat;
     padding: 0.625em 0 0 0;
   }
   span.blog-text {
     padding-left: 2.5em;
   }
   p.resume {
-    background: url("images/pdf_icon_black.png") no-repeat;
+    background: url("assets/images/pdf_icon_black.png") no-repeat;
     padding: 0.625em 0 0 0;
   }
   span.resume-text {
@@ -225,5 +211,3 @@ html, body {
   .divider {
     font-style: normal;
   }
-Status API Training Shop Blog About Help
-© 2015 GitHub, Inc. Terms Privacy Security Contact
