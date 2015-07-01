@@ -208,6 +208,9 @@ html, body {
     background-color: black;
     color: rgb(162, 204, 112);
   }
+  footer a:hover {
+    color: white;
+  }
   .divider {
     font-style: normal;
   }
